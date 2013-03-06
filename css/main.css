@@ -22,6 +22,10 @@ body {
     font-size: 1em;
     line-height: 1.4;
 }
+nav ul li {
+		
+		display:inline;
+	}
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -227,27 +231,68 @@ textarea {
     /* Style adjustments for high resolution devices */
 }
 @media screen and (max-width: 650px) {
+	nav ul{
+		list-style-type: none;
+		margin:0;
+		padding:0;
+	}	
+	nav ul li {
+		
+		display:inline;
+	}
 	h1{
 		color:red;
 	}
 }
 @media only screen
-and (max-width: 480px)
-and (min-device-width : 320px)  {
+and (max-width: 480px) {
 
 	html {
 		-webkit-text-size-adjust: none;
 	}
 
-	nav a {
+	nav ul a {
 		font-size: 90%;
 		padding: 10px 8px;
 	}
-	
+	nav ul{
+		list-style-type: none;
+		margin:0;
+		padding:0;
+	}
+	nav ul li.last{
+		border-bottom:1px solid grey;
+		border-left:1px solid grey;
+		border-right:1px solid grey;
+		border-top:none;
+		border-radius:0px 0px 10px 10px;
+	}
+	nav ul li.first{
+		border-top:1px solid grey;
+		border-left:1px solid grey;
+		border-right:1px solid grey;
+		border-bottom:none;
+		border-radius: 10px 10px 0px 0px;
+
+	}
+	nav ul li {
+		border:1px solid grey;
+		display:inherit;
+		text-align:center;
+		padding:5px;
+	}
 	h1{
 		color:blue;
 	}
 }
+
+@media only screen and (min-device-width : 320px) {
+	
+	nav ul a {
+		
+	}
+}
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
