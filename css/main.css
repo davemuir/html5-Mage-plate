@@ -250,7 +250,9 @@ and (max-width: 480px) {
 	html {
 		-webkit-text-size-adjust: none;
 	}
-
+	body{
+		background-image:url(http://html5mageplate.herokuapp.com/img/pinstripe-apple.jpg);
+	}
 	nav ul a {
 		font-size: 90%;
 		padding: 10px 8px;
@@ -280,6 +282,7 @@ and (max-width: 480px) {
 		display:inherit;
 		text-align:center;
 		padding:5px;
+		background-color:#BFBFBF;
 	}
 	h1{
 		color:blue;
