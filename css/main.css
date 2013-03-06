@@ -254,7 +254,7 @@ and (max-width: 480px) {
 		background-image:url(http://html5mageplate.herokuapp.com/img/pinstripe-apple.jpg);
 	}
 	#mainContainer{
-		width:320px;
+		width:300px;
 		height:auto;
 		margin-left:auto;
 		margin-right:auto;
