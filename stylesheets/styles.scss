@@ -299,20 +299,23 @@ and (max-width: 1024px) and (min-width:480px) {
 	#header{
 		text-align:center;
 		margin: auto;
+		width:824px;
 	}
 	h1{
 		color:black;
 	}
 	#mainContainer{
 		width:824px;
+		height:auto;
 		margin:auto;
 	}
 	#content{
-		margin-top:25px;
 		border:1px solid #BFBFBF;
 		border-radius:4px;
 		box-shadow: 0px 1px 5px 1px #bfbfbf;
-		
+		width:796px;
+		margin:auto;
+		margin-top:30px;
 		p,h2{
 			padding-left:10px;
 			padding-right:10px;
