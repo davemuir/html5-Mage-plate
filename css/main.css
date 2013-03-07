@@ -230,6 +230,45 @@ textarea {
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+@media only screen 
+and (max-width: 650px) {
+	nav{
+		width:auto;
+		border:1px solid black;
+		border-radius:10px;
+		}
+		nav ul{
+			list-style-type: none;
+			margin:0;
+			padding:0;
+			text-align:center;
+		}
+		nav ul li {
+				display:inline;
+				border-left:1px solid black;
+				padding-left:25px;
+				padding-right:25px;
+		}
+		nav ul li.first{
+	    border-left:none;
+		}
+			
+
+	
+	#header{
+		text-align:center;
+		width:600px;
+		margin: auto;
+	}
+	h1{
+		color:red;
+		text-decoration: underline;
+		}
+	#mainContainer{
+		width:600px;
+		margin:auto;
+	}
+}
 
 @media only screen
 and (max-width: 480px) {
