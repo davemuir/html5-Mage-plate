@@ -1,0 +1,19 @@
+/*sass style sheet*/
+@media screen and (max-width: 650px) {
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    nav ul li {
+      display: inline; }
+
+  #header {
+    text-align: center; }
+    #header h1 {
+      color: red;
+      text-decoration: underline; }
+
+  #mainContainer {
+    width: 600px;
+    margin: auto; } }
