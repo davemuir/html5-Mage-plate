@@ -195,9 +195,56 @@ textarea {
   nav ul li:hover {
     background-image: url(img/hover-dark.png); }
 
+  nav ul li a {
+    color: white;
+    text-shadow: 0px 0px 3px grey !important;
+    text-decoration: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 9px;
+    padding-bottom: 11px;
+    display: block; }
+  nav ul li ul {
+    float: left;
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0; }
+    nav ul li ul li {
+      border-top: none;
+      display: block;
+      clear: both;
+      border-radius: 0px 0px 10px 10px;
+      background: #535353;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(11%, #535353), color-stop(49%, #666666), color-stop(49%, #747474), color-stop(65%, #8b8b8b), color-stop(85%, #898989), color-stop(93%, #898989));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#535353', endColorstr='#898989',GradientType=0 );
+      /* IE6-9 */ }
+    nav ul li ul li a {
+      padding-right: 30px;
+      padding-left: 30px;
+      margin: 0; }
+
+  nav ul:after {
+    content: "";
+    clear: both;
+    display: block; }
+
   nav ul li {
     display: inline;
     float: left;
+    border-top: 1px solid black;
     background: #898989;
     /* Old browsers */
     background: -moz-linear-gradient(top, #898989 7%, #898989 15%, #8b8b8b 35%, #747474 51%, #666666 51%, #575757 89%);
@@ -214,50 +261,6 @@ textarea {
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#898989', endColorstr='#575757',GradientType=0 );
     /* IE6-9 */ }
-    nav ul li a {
-      color: white;
-      text-shadow: 0px 0px 3px grey !important;
-      text-decoration: none;
-      padding-right: 30px;
-      padding-left: 30px;
-      padding-top: 9px;
-      padding-bottom: 11px;
-      display: block; }
-    nav ul li ul {
-      float: left;
-      display: none;
-      position: absolute;
-      padding: 0;
-      margin: 0; }
-      nav ul li ul li {
-        display: block;
-        clear: both;
-        border-radius: 0px 0px 10px 10px;
-        background: #535353;
-        /* Old browsers */
-        background: -moz-linear-gradient(top, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
-        /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(11%, #535353), color-stop(49%, #666666), color-stop(49%, #747474), color-stop(65%, #8b8b8b), color-stop(85%, #898989), color-stop(93%, #898989));
-        /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
-        /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
-        /* Opera 11.10+ */
-        background: -ms-linear-gradient(top, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
-        /* IE10+ */
-        background: linear-gradient(to bottom, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
-        /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#535353', endColorstr='#898989',GradientType=0 );
-        /* IE6-9 */ }
-      nav ul li ul li a {
-        padding-right: 30px;
-        padding-left: 30px;
-        margin: 0; }
-
-  nav ul:after {
-    content: "";
-    clear: both;
-    display: block; }
 
   nav ul li:hover > ul {
     display: block; }
@@ -267,10 +270,12 @@ textarea {
     max-width: 115px; }
 
   nav ul li.first {
-    border-radius: 10px 0px 0px 10px; }
+    border-radius: 10px 0px 0px 10px;
+    border-top: 1px solid black; }
 
   nav ul li.last {
-    border-radius: 0px 10px 10px 0px; }
+    border-radius: 0px 10px 10px 0px;
+    border-top: 1px solid black; }
     nav ul li.last:hover {
       border-radius: 0px 10px 0px 0px; }
 
