@@ -190,16 +190,13 @@ textarea {
   nav ul {
     display: inline-table;
     list-style-type: none;
-    list-style: none;
-    padding: 0;
-    margin: auto;
-    height: 100%; }
+    padding: 0; }
 
   nav ul li:hover {
     background-image: url(img/hover-dark.png); }
 
   nav ul li {
-    display: inline;
+    display: inherit;
     float: left;
     background: #898989;
     /* Old browsers */
@@ -270,7 +267,6 @@ textarea {
     max-width: 115px; }
 
   nav ul li.first {
-    border-left: none;
     display: inline;
     border-radius: 10px 0px 0px 10px;
     float: left; }
