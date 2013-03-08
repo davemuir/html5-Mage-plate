@@ -216,6 +216,7 @@ textarea {
     /* IE6-9 */
     float: left;
     /*border-right:1px solid #bfbfbf;*/
+    border: none;
     display: inline; }
     nav ul li a {
       color: white;
