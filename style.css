@@ -195,9 +195,6 @@ textarea {
     margin: auto;
     height: 100%; }
 
-  nav ul li:hover {
-    background-image: url(img/hover-dark.png); }
-
   nav ul li {
     background: #898989;
     /* Old browsers */
