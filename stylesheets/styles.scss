@@ -253,9 +253,8 @@ and (max-width: 1024px) and (min-width:480px) {
 		}	
 		nav ul li {
 		
-			display:inherit;	
+			display:inline;	
 			float:left;
-			border:none;
 		
 			background: #898989; /* Old browsers */
 			background: -moz-linear-gradient(top,  #898989 7%, #898989 15%, #8b8b8b 35%, #747474 51%, #666666 51%, #575757 89%); /* FF3.6+ */
@@ -336,22 +335,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#535353', end
 					}	
 			
 		nav ul li.first{
-	    
-	    display:inline;
 		border-radius:10px 0px 0px 10px;
-		float:left;
 		}
 		
-		nav ul li.last{
-	    display:inline;
-		height:100%;
+		nav ul li.last{	
 		border-radius:0px 10px 10px 0px;
-		float:left;
-		&:hover{
-			border-radius:0px 10px 0px 0px;
-			
-		}
-		
+			&:hover{
+				border-radius:0px 10px 0px 0px;
+				
+			}
 		}
 
 			
