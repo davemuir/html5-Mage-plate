@@ -240,7 +240,7 @@ and (max-width: 1024px) and (min-width:480px) {
 	nav{
 		width:325px;
 		margin:auto;
-
+		padding:0;
 		}
 		nav ul{
 			display: inline-table;
@@ -269,7 +269,8 @@ and (max-width: 1024px) and (min-width:480px) {
 				
 				float:left;
 				display:inline;
-				height:100%;
+				margin:0;
+				padding:0;
 				
 				
 				

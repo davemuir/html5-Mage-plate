@@ -184,7 +184,8 @@ textarea {
 @media only screen and (max-width: 1024px) and (min-width: 480px) {
   nav {
     width: 325px;
-    margin: auto; }
+    margin: auto;
+    padding: 0; }
 
   nav ul {
     display: inline-table;
@@ -216,7 +217,8 @@ textarea {
     /* IE6-9 */
     float: left;
     display: inline;
-    height: 100%; }
+    margin: 0;
+    padding: 0; }
     nav ul li a {
       color: white;
       text-shadow: 0px 0px 3px grey !important;
