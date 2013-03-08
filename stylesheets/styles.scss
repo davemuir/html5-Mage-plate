@@ -237,18 +237,19 @@ textarea {
 @media only screen 
 and (max-width: 1024px) and (min-width:480px) {
 	nav{
-		width:auto;
-		height:38px;
-		
-	
+		width:325px;
+		margin:auto;
 
 		}
 		nav ul{
+			display: inline-table;
 			list-style-type: none;
+			list-style: none;
 			padding:0;
-			margin:0;
+			margin:auto;
 			height:100%;
-			text-align:center;
+			
+			
 		}
 		nav ul li:hover{
 					background-image:url(img/hover-dark.png);
@@ -264,33 +265,97 @@ and (max-width: 1024px) and (min-width:480px) {
 			background: linear-gradient(to bottom,  #898989 7%,#898989 15%,#8b8b8b 35%,#747474 51%,#666666 51%,#575757 89%); /* W3C */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#898989', endColorstr='#575757',GradientType=0 ); /* IE6-9 */
 				
-				display:inline;
-				border-left:1px solid #BFBFBF;
-				padding-top:9px;
-				padding-bottom:11px;
-				padding-left:30px;
-				padding-right:30px;
 				
-				border:1px solid #BFBFBF;
+				float:left;
+				border-right:1px solid #bfbfbf;
+				display:inline;
+				
+				
+				
+				
 				a{
 					color:white;
 					text-shadow:0px 0px 3px grey !important;
 					text-decoration:none;
+					padding-right:30px;
+					padding-left:30px;
+					padding-top:9px;
+					padding-bottom:11px;
+					display:block;
 				}
-			
+				ul{
+					float:left;
+					display: none;
+					position:absolute;
+					padding:0;
+					margin:0;
+					
+					li{
+					border-top:none;
+					display:block;
+					clear:both;
+					border-radius:0px 0px 10px 10px;
+					background: #535353; /* Old browsers */
+background: -moz-linear-gradient(top, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(11%,#535353), color-stop(49%,#666666), color-stop(49%,#747474), color-stop(65%,#8b8b8b), color-stop(85%,#898989), color-stop(93%,#898989)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #535353 11%,#666666 49%,#747474 49%,#8b8b8b 65%,#898989 85%,#898989 93%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #535353 11%,#666666 49%,#747474 49%,#8b8b8b 65%,#898989 85%,#898989 93%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #535353 11%,#666666 49%,#747474 49%,#8b8b8b 65%,#898989 85%,#898989 93%); /* IE10+ */
+background: linear-gradient(to bottom, #535353 11%,#666666 49%,#747474 49%,#8b8b8b 65%,#898989 85%,#898989 93%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#535353', endColorstr='#898989',GradientType=0 ); /* IE6-9 */					}
+					li a{
+					
+					padding-right:30px;
+					padding-left:30px;
+					margin:0;
+					}
+				
+				}
+				
 				
 		}
+		
+		
+		
+		nav ul:after {
+		content: ""; 
+		clear: both; 
+		display: block;
+		width:inherit;
+		}
+		nav ul li ul {
+					
+			}
+
+			nav ul li:hover > ul {
+					display: block;
+			}
+			
+			
+		nav ul li ul li {
+			width:116px;
+			max-width:115px;
+			border-right:none;
+		}	
+			
 		nav ul li.first{
 	    border-left:none;
-	    width:100%;
+	    
 		height:100%;
 		border-radius:10px 0px 0px 10px;
+		float:left;
 		}
 		
 		nav ul li.last{
-	    width:100%;
+	    
 		height:100%;
 		border-radius:0px 10px 10px 0px;
+		float:left;
+		&:hover{
+			border-radius:0px 10px 0px 0px;
+			border-bottom:none;
+		}
+		border-right:none;
 		}
 
 			
@@ -315,7 +380,7 @@ and (max-width: 1024px) and (min-width:480px) {
 		box-shadow: 0px 1px 5px 1px #bfbfbf;
 		width:796px;
 		margin:auto;
-		margin-top:30px;
+		margin-top:40px;
 		p,h2{
 			padding-left:10px;
 			padding-right:10px;
@@ -378,6 +443,7 @@ and (max-width: 480px) and (min-width:320px) {
 		padding: 10px 8px;
 		color:black !important;
 		text-decoration: none;
+		
 	}
 	nav ul{
 		list-style-type: none;
@@ -400,10 +466,11 @@ and (max-width: 480px) and (min-width:320px) {
 
 	}
 	nav ul li {
+		
 		border:1px solid #BFBFBF;
 		display:inherit;
 		text-align:center;
-		padding:5px;
+		padding:7px;
 		background-color:white;
 	}
 	#content{

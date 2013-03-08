@@ -183,15 +183,16 @@ textarea {
 */
 @media only screen and (max-width: 1024px) and (min-width: 480px) {
   nav {
-    width: auto;
-    height: 38px; }
+    width: 325px;
+    margin: auto; }
 
   nav ul {
+    display: inline-table;
     list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin: 0;
-    height: 100%;
-    text-align: center; }
+    margin: auto;
+    height: 100%; }
 
   nav ul li:hover {
     background-image: url(img/hover-dark.png); }
@@ -213,28 +214,78 @@ textarea {
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#898989', endColorstr='#575757',GradientType=0 );
     /* IE6-9 */
-    display: inline;
-    border-left: 1px solid #bfbfbf;
-    padding-top: 9px;
-    padding-bottom: 11px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border: 1px solid #bfbfbf; }
+    float: left;
+    border-right: 1px solid #bfbfbf;
+    display: inline; }
     nav ul li a {
       color: white;
       text-shadow: 0px 0px 3px grey !important;
-      text-decoration: none; }
+      text-decoration: none;
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-top: 9px;
+      padding-bottom: 11px;
+      display: block; }
+    nav ul li ul {
+      float: left;
+      display: none;
+      position: absolute;
+      padding: 0;
+      margin: 0; }
+      nav ul li ul li {
+        border-top: none;
+        display: block;
+        clear: both;
+        border-radius: 0px 0px 10px 10px;
+        background: #535353;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(11%, #535353), color-stop(49%, #666666), color-stop(49%, #747474), color-stop(65%, #8b8b8b), color-stop(85%, #898989), color-stop(93%, #898989));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, #535353 11%, #666666 49%, #747474 49%, #8b8b8b 65%, #898989 85%, #898989 93%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#535353', endColorstr='#898989',GradientType=0 );
+        /* IE6-9 */ }
+      nav ul li ul li a {
+        padding-right: 30px;
+        padding-left: 30px;
+        margin: 0; }
+
+  nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+    width: inherit; }
+
+  nav ul li:hover > ul {
+    display: block; }
+
+  nav ul li ul li {
+    width: 116px;
+    max-width: 115px;
+    border-right: none; }
 
   nav ul li.first {
     border-left: none;
-    width: 100%;
     height: 100%;
-    border-radius: 10px 0px 0px 10px; }
+    border-radius: 10px 0px 0px 10px;
+    float: left; }
 
   nav ul li.last {
-    width: 100%;
     height: 100%;
-    border-radius: 0px 10px 10px 0px; }
+    border-radius: 0px 10px 10px 0px;
+    float: left;
+    border-right: none; }
+    nav ul li.last:hover {
+      border-radius: 0px 10px 0px 0px;
+      border-bottom: none; }
 
   #header {
     text-align: center;
@@ -255,7 +306,7 @@ textarea {
     box-shadow: 0px 1px 5px 1px #bfbfbf;
     width: 796px;
     margin: auto;
-    margin-top: 30px; }
+    margin-top: 40px; }
     #content p, #content h2 {
       padding-left: 10px;
       padding-right: 10px; } }
@@ -337,7 +388,7 @@ textarea {
     border: 1px solid #bfbfbf;
     display: inherit;
     text-align: center;
-    padding: 5px;
+    padding: 7px;
     background-color: white; }
 
   #content {
