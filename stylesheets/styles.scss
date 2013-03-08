@@ -268,9 +268,8 @@ and (max-width: 1024px) and (min-width:480px) {
 				
 				
 				float:left;
-				/*border-right:1px solid #bfbfbf;*/  
 				display:inline;
-				
+				height:100%;
 				
 				
 				
@@ -322,7 +321,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#535353', end
 		content: ""; 
 		clear: both; 
 		display: block;
-		width:inherit;
 		}
 		nav ul li ul {
 					
