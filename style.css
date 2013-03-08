@@ -198,6 +198,7 @@ textarea {
   nav ul li {
     display: inherit;
     float: left;
+    border: none;
     background: #898989;
     /* Old browsers */
     background: -moz-linear-gradient(top, #898989 7%, #898989 15%, #8b8b8b 35%, #747474 51%, #666666 51%, #575757 89%);
