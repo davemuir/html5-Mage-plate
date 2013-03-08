@@ -215,7 +215,7 @@ textarea {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#898989', endColorstr='#575757',GradientType=0 );
     /* IE6-9 */
     float: left;
-    border-right: 1px solid #bfbfbf;
+    /*border-right:1px solid #bfbfbf;*/
     display: inline; }
     nav ul li a {
       color: white;
