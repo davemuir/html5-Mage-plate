@@ -216,7 +216,6 @@ textarea {
     /* IE6-9 */
     float: left;
     /*border-right:1px solid #bfbfbf;*/
-    border: none;
     display: inline; }
     nav ul li a {
       color: white;
@@ -234,7 +233,6 @@ textarea {
       padding: 0;
       margin: 0; }
       nav ul li ul li {
-        border-top: none;
         display: block;
         clear: both;
         border-radius: 0px 0px 10px 10px;
@@ -270,8 +268,7 @@ textarea {
 
   nav ul li ul li {
     width: 116px;
-    max-width: 115px;
-    border-right: none; }
+    max-width: 115px; }
 
   nav ul li.first {
     border-left: none;
@@ -282,11 +279,9 @@ textarea {
   nav ul li.last {
     height: 100%;
     border-radius: 0px 10px 10px 0px;
-    float: left;
-    border-right: none; }
+    float: left; }
     nav ul li.last:hover {
-      border-radius: 0px 10px 0px 0px;
-      border-bottom: none; }
+      border-radius: 0px 10px 0px 0px; }
 
   #header {
     text-align: center;

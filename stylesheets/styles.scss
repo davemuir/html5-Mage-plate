@@ -269,7 +269,6 @@ and (max-width: 1024px) and (min-width:480px) {
 				
 				float:left;
 				/*border-right:1px solid #bfbfbf;*/  
-				border:none;
 				display:inline;
 				
 				
@@ -293,7 +292,7 @@ and (max-width: 1024px) and (min-width:480px) {
 					margin:0;
 					
 					li{
-					border-top:none;
+					
 					display:block;
 					clear:both;
 					border-radius:0px 0px 10px 10px;
@@ -337,8 +336,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#535353', end
 		nav ul li ul li {
 			width:116px;
 			max-width:115px;
-			border-right:none;
-		}	
+					}	
 			
 		nav ul li.first{
 	    border-left:none;
@@ -355,9 +353,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#535353', end
 		float:left;
 		&:hover{
 			border-radius:0px 10px 0px 0px;
-			border-bottom:none;
+			
 		}
-		border-right:none;
+		
 		}
 
 			
